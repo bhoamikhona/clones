@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Clothing Clone</title>
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/137b9ebb32.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/clothing.css" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="header">
+        <h1 class="page-title">Men's Clothing</h1>
+        <div>
+          <span>(497)</span>
+          <div class="filter-sort-controls">
+            <div class="filter-sort-control filter">
+              <span class="hide">Hide</span> Filters
+              <ion-icon
+                class="filter-sort-icon"
+                name="options-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-sort-control sort">
+              Sort By
+              <ion-icon
+                class="filter-sort-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="clothing-main">
+      <div class="left-wrapper">
+        <div class="left">
+          <div class="categories">
+            <ul class="categories-list">
+              <li class="categories-link">Tops & T-Shirts</li>
+              <li class="categories-link">Hoodies & Sweatshirts</li>
+              <li class="categories-link">Jackets</li>
+              <li class="categories-link">Trousers & Tights</li>
+              <li class="categories-link">Tracksuits</li>
+              <li class="categories-link">Shorts</li>
+              <li class="categories-link">Compression & Baselayer</li>
+              <li class="categories-link">Socks</li>
+            </ul>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Gender&nbsp;(1)</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input checked type="checkbox" id="men" class="filter-checkbox" />
+              <label for="men" class="filter-label">Men</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="women" class="filter-checkbox" />
+              <label for="women" class="filter-label">Women</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="unisex" class="filter-checkbox" />
+              <label for="unisex" class="filter-label">Unisex</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Shop By Price</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="choice-1" class="filter-checkbox" />
+              <label for="choice-1" class="filter-label"
+                >Under ₹ 2 500.00</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="choice-2" class="filter-checkbox" />
+              <label for="choice-2" class="filter-label"
+                >₹ 2 501.00 - ₹ 7 500.00</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="choice-3" class="filter-checkbox" />
+              <label for="choice-3" class="filter-label"
+                >₹ 7 501.00 - ₹ 12 999.00</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="choice-4" class="filter-checkbox" />
+              <label for="choice-4" class="filter-label"
+                >Over ₹ 13 000.00</label
+              >
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Sale & offers</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="sale" class="filter-checkbox" />
+              <label for="sale" class="filter-label">Sale</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Sizing</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="asia" class="filter-checkbox" />
+              <label for="asia" class="filter-label">Asia Sizing</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="usa" class="filter-checkbox" />
+              <label for="usa" class="filter-label">US Sizing</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Size</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-btns-box">
+              <button class="filter-btn">L</button>
+              <button class="filter-btn">XL</button>
+              <button class="filter-btn">30</button>
+              <button class="filter-btn">32</button>
+              <button class="filter-btn">34</button>
+              <button class="filter-btn">36</button>
+              <button class="filter-btn">38</button>
+              <button class="filter-btn">2</button>
+              <button class="filter-btn">8</button>
+              <button class="filter-btn filter-btn-lg">12.5-2.5</button>
+              <button class="filter-btn filter-btn-lg">2-5</button>
+              <button class="filter-btn filter-btn-lg">5-8</button>
+              <button class="filter-btn filter-btn-lg">8-11</button>
+              <button class="filter-btn filter-btn-lg">11-14.5</button>
+              <button class="filter-btn filter-btn-lg">3.5-5</button>
+              <button class="filter-btn filter-btn-lg">5.5-6.5</button>
+              <button class="filter-btn filter-btn-lg">7-8.5</button>
+              <button class="filter-btn filter-btn-lg">9-10.5</button>
+              <button class="filter-btn filter-btn-lg">11-12.5</button>
+              <button class="filter-btn filter-btn-lg">13-15</button>
+              <button class="filter-btn filter-btn-lg">S (40)</button>
+              <button class="filter-btn filter-btn-lg">M (44)</button>
+              <button class="filter-btn filter-btn-lg">L (48)</button>
+              <button class="filter-btn filter-btn-lg">XL (52)</button>
+              <button class="filter-btn filter-btn-lg">XXL (56)</button>
+              <button class="filter-btn">XS</button>
+              <button class="filter-btn">S</button>
+              <button class="filter-btn">M</button>
+              <button class="filter-btn filter-btn-lg">L</button>
+              <button class="filter-btn filter-btn-lg">XL</button>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Colour</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="color-filter-control-box">
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="black"></button>
+                <label for="black" class="filter-label">Black</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="blue"></button>
+                <label for="blue" class="filter-label">Blue</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="brown"></button>
+                <label for="brown" class="filter-label">Brown</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="green"></button>
+                <label for="green" class="filter-label">Green</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="grey"></button>
+                <label for="grey" class="filter-label">Grey</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="multi-color"></button>
+                <label for="multi-color" class="filter-label"
+                  >Multi-Colour</label
+                >
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="orange"></button>
+                <label for="orange" class="filter-label">Orange</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="pink"></button>
+                <label for="pink" class="filter-label">Pink</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="purple"></button>
+                <label for="purple" class="filter-label">Purple</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="red"></button>
+                <label for="red" class="filter-label">Red</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="white"></button>
+                <label for="white" class="filter-label">White</label>
+              </div>
+
+              <div class="filter-control color-filter-control">
+                <button class="color-btn" id="yellow"></button>
+                <label for="yellow" class="filter-label">Yellow</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Fit</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="oversized" class="filter-checkbox" />
+              <label for="oversized" class="filter-label">Oversized</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="loose" class="filter-checkbox" />
+              <label for="loose" class="filter-label">Loose</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="slim" class="filter-checkbox" />
+              <label for="slim" class="filter-label">Slim</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="standard" class="filter-checkbox" />
+              <label for="standard" class="filter-label">Standard</label>
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Brand</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="sportswear" class="filter-checkbox" />
+              <label for="sportswear" class="filter-label"
+                >Nike Sportswear</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="jordan" class="filter-checkbox" />
+              <label for="jordan" class="filter-label">Jordan</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="lab" class="filter-checkbox" />
+              <label for="lab" class="filter-label">Nike Lab</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="acg" class="filter-checkbox" />
+              <label for="acg" class="filter-label">ACG</label>
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Sports</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="lifestyle" class="filter-checkbox" />
+              <label for="lifestyle" class="filter-label">Lifestyle</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="running" class="filter-checkbox" />
+              <label for="running" class="filter-label">Running</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="gym" class="filter-checkbox" />
+              <label for="gym" class="filter-label">Training & Gym</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="basketball" class="filter-checkbox" />
+              <label for="basketball" class="filter-label">Basketball</label>
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Studio Classes</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="yoga" class="filter-checkbox" />
+              <label for="yoga" class="filter-label">Yoga</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Icon</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="elite" class="filter-checkbox" />
+              <label for="elite" class="filter-label">Elite</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="miler" class="filter-checkbox" />
+              <label for="miler" class="filter-label">Miler</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="windrunner" class="filter-checkbox" />
+              <label for="windrunner" class="filter-label">Windrunner</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Technology</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="dri" class="filter-checkbox" />
+              <label for="dri" class="filter-label">Dri-FIT</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="storm" class="filter-checkbox" />
+              <label for="storm" class="filter-label">Storm-FIT</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="therma" class="filter-checkbox" />
+              <label for="therma" class="filter-label">Therma-FIT</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="grip" class="filter-checkbox" />
+              <label for="grip" class="filter-label">NikeGrip</label>
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Sleeve Length</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="short" class="filter-checkbox" />
+              <label for="short" class="filter-label">Short-Sleeve</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="long" class="filter-checkbox" />
+              <label for="long" class="filter-label">Long-Sleeve</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="tank" class="filter-checkbox" />
+              <label for="tank" class="filter-label">Sleeveless/Tank</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Neck Style</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="crew" class="filter-checkbox" />
+              <label for="crew" class="filter-label">Crew Neck</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Insulation Type</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="down-fill" class="filter-checkbox" />
+              <label for="down-fill" class="filter-label">Down Fill</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Closure Type</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="Placketed" class="filter-checkbox" />
+              <label for="Placketed" class="filter-label">Placketed</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Length</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="full-length" class="filter-checkbox" />
+              <label for="full-length" class="filter-label">Full Length</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="knee-length" class="filter-checkbox" />
+              <label for="knee-length" class="filter-label">Knee Length</label>
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="three-fourth"
+                class="filter-checkbox"
+              />
+              <label for="three-fourth" class="filter-label">3/4 Length</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Lined</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="lined" class="filter-checkbox" />
+              <label for="lined" class="filter-label">Lined</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="unlined" class="filter-checkbox" />
+              <label for="unlined" class="filter-label">Unlined</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Features</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="packable" class="filter-checkbox" />
+              <label for="packable" class="filter-label">Packable</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="uv" class="filter-checkbox" />
+              <label for="uv" class="filter-label">UV-Protective</label>
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="wind-resistant"
+                class="filter-checkbox"
+              />
+              <label for="wind-resistant" class="filter-label"
+                >Wind-Resistant</label
+              >
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="water-resistant"
+                class="filter-checkbox"
+              />
+              <label for="water-resistant" class="filter-label"
+                >Water-Resistant</label
+              >
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Best For</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="warm-weather"
+                class="filter-checkbox"
+              />
+              <label for="warm-weather" class="filter-label"
+                >Warm Weather</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="wet-weather" class="filter-checkbox" />
+              <label for="wet-weather" class="filter-label"
+                >Wet Weather Conditions</label
+              >
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Benefits</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="staying-warm"
+                class="filter-checkbox"
+              />
+              <label for="staying-warm" class="filter-label"
+                >Staying Warm</label
+              >
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="lightweight" class="filter-checkbox" />
+              <label for="lightweight" class="filter-label">Lightweight</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="staying-dry" class="filter-checkbox" />
+              <label for="staying-dry" class="filter-label">Staying Dry</label>
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Material</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="fleece" class="filter-checkbox" />
+              <label for="fleece" class="filter-label">Fleece</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="tech-fleece" class="filter-checkbox" />
+              <label for="tech-fleece" class="filter-label">Tech Fleece</label>
+            </div>
+            <div class="filter-control">
+              <input
+                type="checkbox"
+                id="sustainable-materials"
+                class="filter-checkbox"
+              />
+              <label for="sustainable-materials" class="filter-label"
+                >Sustainable Materials</label
+              >
+            </div>
+          </div>
+
+          <div class="filter-box">
+            <div class="filter-title-box">
+              <p class="filter-title">Athletes</p>
+              <ion-icon
+                class="filter-icon"
+                name="chevron-up-outline"
+              ></ion-icon>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="james" class="filter-checkbox" />
+              <label for="james" class="filter-label">LeBron James</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="durant" class="filter-checkbox" />
+              <label for="durant" class="filter-label">Kevin Durant</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="morant" class="filter-checkbox" />
+              <label for="morant" class="filter-label">Ja Morant</label>
+            </div>
+            <div class="filter-control">
+              <input type="checkbox" id="woods" class="filter-checkbox" />
+              <label for="woods" class="filter-label">Tiger Woods</label>
+            </div>
+            <div class="filter-control">
+              <p>+ More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-wrapper">
+        <div class="right">
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/78.webp"
+                alt="pullover img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">JA</p>
+              <p class="clothing-info">
+                Men's Dri-FIT Pullover Basketball Hoodie
+              </p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 5 995.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/79.webp"
+                alt="t-shirt img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-name">
+                <a class="clothing-name" href="./product.html"> Zion </a>
+              </p>
+              <p class="clothing-info">Men's T-Shirt</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 1 795.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/80.webp"
+                alt="jacket img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-name">
+                Nike Trail 'Cosmic Peaks' GORE-TEX INFINIUM<sup>TM</sup>
+              </p>
+              <p class="clothing-info">Men's Running Jacket</p>
+              <p class="clothing-colors">1 Colour</p>
+              <p class="clothing-price">MRP: ₹ 14 995.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/81.webp"
+                alt="trousers img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-name">Nike Life</p>
+              <p class="clothing-info">Men's Carpenter Trousers</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 5 995.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/82.webp"
+                alt="trousers img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Member product</p>
+              <p class="clothing-name">Jordan Essentials</p>
+              <p class="clothing-info">Men's Fleece Baseline Trousers</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 3 895.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/83.webp"
+                alt="t-shirt img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike ACG</p>
+              <p class="clothing-info">Men's T-Shirt</p>
+              <p class="clothing-colors">1 Colour</p>
+              <p class="clothing-price">MRP: ₹ 2 195.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/84.webp"
+                alt="shorts img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike ACG</p>
+              <p class="clothing-info">Men's Trail Shorts</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 2 795.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/85.webp"
+                alt="trouser img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike ACG</p>
+              <p class="clothing-info">Men's Trail Trousers</p>
+              <p class="clothing-colors">1 Colour</p>
+              <p class="clothing-price">MRP: ₹ 5 495.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/86.webp"
+                alt="t-shirt img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike ACG "Lungs"</p>
+              <p class="clothing-info">Men's Long-Sleeve T-Shirt</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 2 895.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/87.webp"
+                alt="t-shirt img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike Sportswear</p>
+              <p class="clothing-info">Men's Oversized T-Shirt</p>
+              <p class="clothing-colors">1 Colour</p>
+              <p class="clothing-price">MRP: ₹ 3 095.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/88.webp"
+                alt="trouser img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Sustainable Materials</p>
+              <p class="clothing-name">Nike ACG Polartec® 'Wolf Tree'</p>
+              <p class="clothing-info">Men's Trousers</p>
+              <p class="clothing-colors">1 Colour</p>
+              <p class="clothing-price">MRP: ₹ 7 495.00</p>
+            </div>
+          </div>
+
+          <div class="clothing-card">
+            <div class="clothing-img-box">
+              <img
+                src="./assets/images/89.webp"
+                alt="t-shirt img"
+                class="clothing-img"
+              />
+            </div>
+            <div class="clothing-details">
+              <p class="clothing-sustainable">Member product</p>
+              <p class="clothing-name">Nike ACG</p>
+              <p class="clothing-info">Men's Short-Sleeve T-Shirt</p>
+              <p class="clothing-colors">2 Colours</p>
+              <p class="clothing-price">MRP: ₹ 2 695.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

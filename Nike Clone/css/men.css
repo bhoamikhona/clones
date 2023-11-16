@@ -1,0 +1,87 @@
+.tertiary-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3.95rem;
+
+  position: sticky;
+  background-color: var(--white);
+  z-index: 1;
+  /* position: fixed; */
+
+  /* border: 2px solid red; */
+}
+
+.men-logo {
+  line-height: 1.92rem;
+}
+
+.tertiary-nav-list-box {
+  margin: 0 auto;
+}
+
+.tertiary-nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.tertiary-nav-link:link,
+.tertiary-nav-link:visited {
+  color: var(--black);
+  text-decoration: none;
+  line-height: 2.8rem;
+}
+.tertiary-nav-link:hover,
+.tertiary-nav-link:active {
+  color: var(--grey-7);
+}
+
+/* Versatility Section */
+.versatility-three-grid-section-img-box {
+  margin-bottom: 4.8rem;
+}
+
+.versatility-three-grid-section-caption-heading {
+  margin-bottom: 3.2rem;
+}
+
+/* The Latest Section - Men */
+
+.men-latest-img-box {
+  height: 90rem;
+}
+
+.men-latest-img {
+  object-fit: cover;
+}
+
+/* Men Iconic Section */
+.men-iconic-img-box {
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 37.5em) {
+  .men-latest-img-box {
+    height: 50rem;
+  }
+
+  .men-essentials {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .men-essentials-img-box {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn-underline {
+    display: flex;
+  }
+}

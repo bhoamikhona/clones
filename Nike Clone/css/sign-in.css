@@ -1,0 +1,95 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in {
+  max-width: 46rem;
+  width: 100%;
+  padding-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* border: 2px solid red; */
+}
+
+.icons-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 3rem;
+}
+
+.nike-logo,
+.jordan-logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.nike-logo > svg,
+.jordan-logo > svg {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.33);
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.sign-up-link:link,
+.sign-up-link:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.location-box {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  font-family: var(--helvetica-text);
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.grey-link:link,
+.grey-link:visited {
+  font: inherit;
+  color: var(--grey-7);
+  margin-bottom: 4rem;
+}
+
+.input {
+  width: 100%;
+  height: 5.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.2rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--black);
+  border-radius: 5px;
+
+  font-family: var(--helvetica-text);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  margin-bottom: 4rem;
+}
+
+.policy {
+  line-height: 2.4rem;
+  color: var(--grey-7);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.btn-dark {
+  align-self: flex-end;
+}

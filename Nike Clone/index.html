@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Clone</title>
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="secondary-nav-box">
+        <div class="secondary-nav-logo-box">
+          <svg height="24px" width="24px" fill="#111" viewBox="0 0 26 32">
+            <path
+              d="M14.4 5.52v-.08q0-.56.36-1t.92-.44 1 .36.48.96-.36 1-.96.4l-.24.08.08.12-.08.44-.16 1.28q.08.08.08.16l-.16.8q-.08.16-.16.24l-.08.32q-.16.64-.28 1.04t-.2.64V12q-.08.4-.12.64t-.28.8q-.16.32 0 1.04l.08.08q0 .24.2.56t.2.56q.08 1.6-.24 2.72l.16.48q.96.48.56 1.04l.4.16q.96.48 1.36.84t.8.76q.32.08.48.24l.24.08q1.68 1.12 3.36 2.72l.32.24v.08l-.08.16.24.16h.08q.24.16.32.16h.08q.08 0 .16-.08l.16-.08q.16-.16.32-.24h.32q.08 0 0 .08l-.32.16-.4.48h.56l.56.08q.24-.08.4-.16l.4-.24q.24-.08.48.16h.08q.08.08-.08.24l-.96.88q-.4.32-.72.4l-1.04.72q-.08.08-.16 0l-.24-.32-.16-.32-.2-.28-.24-.32-.2-.24-.16-.2-.32-.24q-.16 0-.32-.08l-1.04-.8q-.24 0-.56-.24-1.2-1.04-1.6-1.28l-.48-.32-.96-.16q-.48-.08-1.28-.48l-.64-.32q-.64-.32-.88-.32l-.32-.16q-.32-.08-.48-.16l-.16-.16q-.16 0-.32.08l-1.6.8-2 .88q-.8.64-1.52 1.04l-.88.4-1.36.96q-.16.16-.32 0l-.16.16q-.24.08-.32.08l-.32.16v.16h-.16l-.16.24q-.16.32-.32.36t-.2.12-.08.12l-.16.16-.24.16-.36-.04-.48.08-.32.08q-.4.08-.64-.12t-.4-.6q-.16-.24.16-.4l.08-.08q.08-.08.24-.08h.48L1.6 26l.32-.08q0-.16.08-.24.08-.08.24-.08v-.08q-.08-.16-.08-.32-.08-.16-.04-.24t.08-.08h.04l.08.24q.08.4.24.24l.08-.16q.08-.16.24-.16l.16.16.16-.16-.08-.08q0-.08.08-.08l.32-.32q.4-.48.96-.88 1.12-.88 2.4-1.36.4-.4.88-.4.32-.56.96-1.2.56-.4.8-.56.16-.32.4-.32H10l.16-.16q.16-.08.24-.16v-.4q0-.4.08-.64t.4-.24l.32-.32q-.16-.32-.16-.72h-.08q-.16-.24-.16-.48-.24-.4-.32-.64h-.24q-.08.24-.4.32l-.08.16q-.32.56-.56.84t-.88.68q-.4.4-.56.88-.08.24 0 .48l-.08.16h.08q0 .16.08.16h.08q.16.08.16.2t-.24.08-.36-.16-.2-.12l-.24.24q-.16.24-.32.2t-.08-.12l.08-.08q.08-.16 0-.16l-.64.16q-.08.08-.2 0t.04-.16l.4-.16q0-.08-.08-.08-.32.16-.64.08l-.4-.08-.08-.08q0-.08.08-.08.32.08.8-.08l.56-.24.64-.72.08-.16q.32-.64.68-1.16t.76-.84l.08-.32q.16-.32.32-.56t.4-.64l.24-.32q.32-.48.72-.48l.24-.24q.08-.08.08-.24l.16-.16-.08-.08q-.48-.4-.48-.72-.08-.56.36-.96t.88-.36.68.28l.16.16q.08 0 .08.08l.32.16v.24q.16.16.16.24.16-.24.48-.56l.4-1.28q0-.32.16-.64l.16-.24v-.16l.24-.96h.16l.24-.96q.08-.24 0-.56l-.32-.8z"
+            ></path>
+          </svg>
+        </div>
+
+        <nav class="secondary-nav">
+          <ul class="secondary-nav-list">
+            <li class="secondary-nav-link">Find a Store</li>
+            <li class="secondary-nav-link">|</li>
+            <li class="secondary-nav-link">Help</li>
+            <li class="secondary-nav-link">|</li>
+            <li class="secondary-nav-link">Join Us</li>
+            <li class="secondary-nav-link">|</li>
+            <li class="secondary-nav-link">
+              <a class="secondary-nav-link" href="./sign-in.html"> Sign In </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-nav-box">
+        <div class="main-nav-logo-box">
+          <svg
+            aria-hidden="true"
+            class="pre-logo-svg"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="24px"
+            height="24px"
+            fill="none"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <nav class="main-nav-middle">
+          <ul class="main-nav-list">
+            <li><a href="#" class="main-nav-link">New & Featured</a></li>
+            <li><a href="./men.html" class="main-nav-link">Men</a></li>
+            <li><a href="#" class="main-nav-link">Women</a></li>
+            <li><a href="#" class="main-nav-link">Kids</a></li>
+            <li><a href="#" class="main-nav-link">Sale</a></li>
+            <li><a href="#" class="main-nav-link">Customise</a></li>
+            <li><a href="#" class="main-nav-link">SNKRS</a></li>
+          </ul>
+        </nav>
+        <div class="main-nav-right">
+          <div class="search-bar">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            <input class="search-field" type="text" placeholder="Search" />
+          </div>
+          <ion-icon class="nav-icon" name="heart-outline"></ion-icon>
+          <ion-icon class="nav-icon" name="bag-outline"></ion-icon>
+        </div>
+        <div class="main-nav-mobile">
+          <ion-icon class="nav-icon" name="search-outline"></ion-icon>
+          <ion-icon class="nav-icon" name="bag-outline"></ion-icon>
+          <ion-icon class="nav-icon" name="person-outline"></ion-icon>
+          <ion-icon class="nav-icon" name="menu-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="notification-box">
+        <p class="notification-message">
+          Hello Nike App
+          <br />
+          <span class="notification-body"
+            >Download the app to access everything Nike.
+            <a class="notification-link" href="#">Get Your Great</a></span
+          >
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero banner-section">
+        <div class="banner-section-img-box">
+          <picture>
+            <source
+              media="(max-width: 37.5em)"
+              srcset="./assets/images/2.webp"
+            />
+            <img
+              src="./assets/images/1.webp"
+              alt="hero image"
+              class="banner-section-img"
+            />
+          </picture>
+        </div>
+        <div class="banner-section-caption-box">
+          <h1 class="banner-section-heading">Gifts that Move You</h1>
+          <p class="banner-section-body">
+            This year's gift. Next year's greatness.
+          </p>
+          <div class="banner-section-btn-box">
+            <button class="btn btn-dark">Shop</button>
+            <button class="btn btn-dark">Explore</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <div class="section-title-with-link">
+        <h2 class="title">Featured</h2>
+        <a class="link" href="#">Shop</a>
+      </div>
+      <section class="featured three-grid-section">
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/4.webp"
+              />
+              <img
+                src="./assets/images/3.webp"
+                alt="most wanted image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <p class="three-grid-section-caption">Most-Wanted Styles</p>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/6.webp"
+              />
+              <img
+                src="./assets/images/5.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <p class="three-grid-section-caption">Accessories</p>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/8.webp"
+              />
+              <img
+                src="./assets/images/7.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <p class="three-grid-section-caption">Matching Sets</p>
+        </div>
+      </section>
+
+      <!-- Trending Section -->
+      <h2 class="section-title">Trending</h2>
+      <section class="trending two-grid-section">
+        <div class="two-grid-section-card">
+          <div class="two-grid-section-img-box">
+            <img
+              src="./assets/images/9.webp"
+              alt="retro-kicks"
+              class="two-grid-section-img"
+            />
+          </div>
+          <div class="two-grid-section-caption">
+            <p class="two-grid-section-caption-title">Retro Kicks</p>
+            <p class="two-grid-section-caption-body">Era-Echoing, '70s Style</p>
+            <p class="btn btn-light">Shop</p>
+          </div>
+        </div>
+
+        <div class="two-grid-section-card">
+          <div class="two-grid-section-img-box">
+            <img
+              src="./assets/images/10.webp"
+              alt="air force"
+              class="two-grid-section-img"
+            />
+          </div>
+          <div class="two-grid-section-caption">
+            <p class="two-grid-section-caption-title">Nike Air Force 1 Wild</p>
+            <p class="two-grid-section-caption-body">
+              The AF1 You Didn't Know You Needed
+            </p>
+            <p class="btn btn-light">Shop</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Section -->
+      <h2 class="section-title">The Latest</h2>
+      <section class="latest banner-section">
+        <div class="banner-section-img-box">
+          <picture>
+            <source
+              media="(max-width: 37.5em)"
+              srcset="./assets/images/12.webp"
+            />
+            <img
+              src="./assets/images/11.webp"
+              alt="hero image"
+              class="banner-section-img"
+            />
+          </picture>
+        </div>
+        <div class="banner-section-caption-box">
+          <p class="banner-section-subheading">New for Early Walkers</p>
+          <h1 class="banner-section-heading">
+            It Starts with <br />
+            Nike Swoosh 1
+          </h1>
+          <p class="banner-section-body">
+            Designed to nurture first and future steps.
+          </p>
+          <div class="banner-section-btn-box">
+            <button class="btn btn-dark">Shop</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gear Up Section -->
+      <h2 class="section-title">Gear Up</h2>
+      <section class="gear-up three-grid-section">
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/14.jpg"
+              />
+              <img
+                src="./assets/images/13.jpg"
+                alt="most wanted image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <p class="three-grid-caption-overlay-title">Give Your Feet a Hug</p>
+            <button class="btn btn-light">Shop Infinity</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/16.jpg"
+              />
+              <img
+                src="./assets/images/15.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <p class="three-grid-caption-overlay-title">
+              A Springy Ride for Every Run
+            </p>
+            <button class="btn btn-light">Shop Pegasus</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/18.jpg"
+              />
+              <img
+                src="./assets/images/17.jpg"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <p class="three-grid-caption-overlay-title">
+              All the Cushion. All the Feels.
+            </p>
+            <button class="btn btn-light">Shop Invincible</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Don't Miss Section -->
+      <h2 class="section-title">Don't Miss</h2>
+      <section class="dont-miss two-grid-section">
+        <div class="two-grid-section-card">
+          <div class="two-grid-section-img-box">
+            <img
+              src="./assets/images/19.webp"
+              alt="essentials"
+              class="two-grid-section-img"
+            />
+          </div>
+          <div class="two-grid-section-caption">
+            <p class="two-grid-section-caption-body">Workout Essentials</p>
+            <p class="btn btn-light">Shop</p>
+          </div>
+        </div>
+
+        <div class="two-grid-section-card">
+          <div class="two-grid-section-img-box">
+            <img
+              src="./assets/images/20.webp"
+              alt="big swoosh energy"
+              class="two-grid-section-img"
+            />
+          </div>
+          <div class="two-grid-section-caption">
+            <p class="two-grid-section-caption-body">Big Swoosh Energy</p>
+            <p class="btn btn-light">Shop</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Always Iconic Section -->
+      <h2 class="section-title">Always Iconic</h2>
+      <section class="iconic">
+        <div class="five-grid-section">
+          <div class="five-grid-section-img-box">
+            <img
+              src="./assets/images/21.webp"
+              alt="pegasus"
+              class="five-grid-section-img"
+            />
+          </div>
+          <div class="five-grid-section-img-box">
+            <img
+              src="./assets/images/22.webp"
+              alt="air force 1"
+              class="five-grid-section-img"
+            />
+          </div>
+          <div class="five-grid-section-img-box">
+            <img
+              src="./assets/images/23.webp"
+              alt="air jordan 1"
+              class="five-grid-section-img"
+            />
+          </div>
+          <div class="five-grid-section-img-box">
+            <img
+              src="./assets/images/24.webp"
+              alt="air max"
+              class="five-grid-section-img"
+            />
+          </div>
+          <div class="five-grid-section-img-box">
+            <img
+              src="./assets/images/25.webp"
+              alt="dunk"
+              class="five-grid-section-img"
+            />
+          </div>
+        </div>
+        <div class="carousel-controls iconic-carousel-controls">
+          <button class="carousel-control">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="carousel-control">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sport Section -->
+      <div class="section-title-with-controls">
+        <h2 class="title">Shop by Sport</h2>
+        <div class="carousel-controls">
+          <button class="carousel-control disabled">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="carousel-control">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <section class="sport three-grid-section">
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box sport-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/29.webp"
+              />
+              <img
+                src="./assets/images/26.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-section-caption">
+            <p class="three-grid-section-caption-heading">Nike Basketball</p>
+            <p class="three-grid-section-caption-body">
+              Styles made for your game.
+            </p>
+            <button class="btn-underline">Shop</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box sport-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/30.webp"
+              />
+              <img
+                src="./assets/images/27.jpg"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-section-caption">
+            <p class="three-grid-section-caption-heading">Nike Golf</p>
+            <p class="three-grid-section-caption-body">
+              Conquer any course in style.
+            </p>
+            <button class="btn-underline">Shop</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box sport-section-img-box">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/31.webp"
+              />
+              <img
+                src="./assets/images/28.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-section-caption">
+            <p class="three-grid-section-caption-heading">Nike Trail</p>
+            <p class="three-grid-section-caption-body">
+              Gear that leads to wild places.
+            </p>
+            <button class="btn-underline">Shop</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Essentials Section -->
+      <h2 class="section-title">Essentials</h2>
+      <section class="essentials three-grid-section">
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/33.webp"
+              />
+              <img
+                src="./assets/images/32.webp"
+                alt="most wanted image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <button class="btn btn-light">Men's</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/35.webp"
+              />
+              <img
+                src="./assets/images/34.webp"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <button class="btn btn-light">Women's</button>
+          </div>
+        </div>
+
+        <div class="three-grid-section-card">
+          <div class="three-grid-section-img-box overlay-caption-card">
+            <picture>
+              <source
+                media="(max-width: 37.5em)"
+                srcset="./assets/images/37.webp"
+              />
+              <img
+                src="./assets/images/36.webp"
+                alt="accessories image"
+                class="three-grid-section-img"
+              />
+            </picture>
+          </div>
+          <div class="three-grid-caption-overlay">
+            <button class="btn btn-light">Kid's</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-table">
+        <div class="table">
+          <ul class="table-list">
+            <li class="table-heading">Icons</li>
+            <li class="table-item">Air Force 1</li>
+            <li class="table-item">Huarache</li>
+            <li class="table-item">Air Max 90</li>
+            <li class="table-item">Air Max 95</li>
+            <li class="table-item">Air Max 97</li>
+            <li class="table-item">Air Max 270</li>
+            <li class="table-item">Air Max 720</li>
+            <li class="table-item">All Air Max</li>
+            <li class="table-item">Vapormax</li>
+          </ul>
+          <ul class="table-list">
+            <li class="table-heading">Shoes</li>
+            <li class="table-item">All Shoes</li>
+            <li class="table-item">Custom Shoes</li>
+            <li class="table-item">Jordan Shoes</li>
+            <li class="table-item">Running Shoes</li>
+            <li class="table-item">Basketball Shoes</li>
+            <li class="table-item">Football Shoes</li>
+            <li class="table-item">Gym & Training Shoes</li>
+            <li class="table-item">Lifestyle Shoes</li>
+          </ul>
+          <ul class="table-list">
+            <li class="table-heading">Clothing</li>
+            <li class="table-item">All Clothing</li>
+            <li class="table-item">Modest Wear</li>
+            <li class="table-item">Hoodies & Pullovers</li>
+            <li class="table-item">Shirts & Tops</li>
+            <li class="table-item">Jackets</li>
+            <li class="table-item">Compression & Nike Pro</li>
+            <li class="table-item">Trousers & Leggings</li>
+            <li class="table-item">Shorts</li>
+          </ul>
+          <ul class="table-list">
+            <li class="table-heading">Kids'</li>
+            <li class="table-item">Infant & Toddler Shoes</li>
+            <li class="table-item">Kids' Shoes</li>
+            <li class="table-item">Kids' Jordan Shoes</li>
+            <li class="table-item">Kids' Basketball Shoes</li>
+            <li class="table-item">Kids' Running Shoes</li>
+            <li class="table-item">Kids' Clothing</li>
+            <li class="table-item">Kids' Backpacks</li>
+            <li class="table-item">Kids' Socks</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <div class="footer-table">
+            <ul class="footer-list footer-list-1">
+              <li class="uppercase nike-glyphs">Find a Store</li>
+              <li class="uppercase nike-glyphs">Become a Member</li>
+              <li class="nike-glyphs">Send us Feedback</li>
+            </ul>
+
+            <ul class="footer-list">
+              <li class="uppercase nike-glyphs plus">
+                Get Help <span>+</span>
+              </li>
+              <li class="footer-link">Order Status</li>
+              <li class="footer-link">Deliver</li>
+              <li class="footer-link">Returns</li>
+              <li class="footer-link">Payment Options</li>
+              <li class="footer-link">Contact Us On Nike.com Inquiries</li>
+              <li class="footer-link">Contact Us On All Other Inquiries</li>
+            </ul>
+
+            <ul class="footer-list">
+              <li class="uppercase nike-glyphs plus">
+                About Nike <span>+</span>
+              </li>
+              <li class="footer-link">News</li>
+              <li class="footer-link">Careers</li>
+              <li class="footer-link">Investors</li>
+              <li class="footer-link">Sustainability</li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <ion-icon class="footer-social" name="logo-twitter"></ion-icon>
+            <ion-icon class="footer-social" name="logo-facebook"></ion-icon>
+            <ion-icon class="footer-social" name="logo-youtube"></ion-icon>
+            <ion-icon class="footer-social" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <span class="location"
+              ><ion-icon name="location-outline"></ion-icon> India</span
+            >
+            <p class="copyright">© 2023 Nike, Inc. All Rights Reserved</p>
+          </div>
+          <div class="footer-tnc">
+            <ul class="tnc-list">
+              <li class="footer-link">Guides</li>
+              <li class="footer-link">Terms of Sale</li>
+              <li class="footer-link">Terms of Use</li>
+              <li class="footer-link">Nike Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
