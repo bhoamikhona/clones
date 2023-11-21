@@ -161,6 +161,11 @@
   border-radius: 100%;
 }
 
+.nav-icon-link:link,
+.nav-icon-link:visited {
+  color: var(--black);
+}
+
 .main-nav-mobile {
   display: flex;
   justify-content: flex-end;

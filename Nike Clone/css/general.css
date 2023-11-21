@@ -453,3 +453,7 @@ body {
 .table-item:hover {
   color: var(--black);
 }
+
+.text-grey {
+  color: var(--grey-7);
+}
