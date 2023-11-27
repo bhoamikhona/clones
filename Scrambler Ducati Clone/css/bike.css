@@ -398,6 +398,8 @@ a.control-label:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .tab-link:link,
@@ -418,6 +420,35 @@ a.control-label:hover {
 .tab-link-active:visited {
   color: var(--black);
   border-bottom: 0.5rem solid var(--yellow);
+}
+
+.scrambler-table .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #d6d6d6;
+  transition: 0.3s ease;
+}
+
+.scrambler-table .row:hover {
+  background-color: #f4f4f4;
+}
+
+.scrambler-table .row:first-child {
+  border-top: 0.1rem solid #d6d6d6;
+}
+
+.scrambler-table .row .cell-title {
+  font-weight: bold;
+}
+
+.scrambler-table .row .cell {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.07rem;
+
+  flex: 1 1 0%; /* flex-grow | flex-shrink | flex-basis */
+  padding: 2rem 5%;
+  word-break: break-word;
 }
 
 /* MEDIA QUERIES */
@@ -552,6 +583,11 @@ a.control-label:hover {
   .closer-look-heading {
     font-size: 2.2rem;
     line-height: 2.4rem;
+  }
+
+  .scrambler-table .row .cell {
+    font-size: 1.6rem;
+    line-height: 1.84rem;
   }
 }
 
