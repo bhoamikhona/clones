@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "AdihausDIN-Bold";
+  src: local("AdihausDIN-Bold"),
+    url("./assets/fonts/AdihausDIN-Bold.woff2") format("woff2");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "AdihausDIN-Regular";
+  src: local("AdihausDIN-Regular"),
+    url("./assets/fonts/AdihausDIN-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "adineuePRO-Bold";
+  src: local("adineuePRO-Bold"),
+    url("./assets/fonts/adineuePRO-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AND-Regular";
+  src: local("AND-Regular"), url("./assets/fonts/AND-Regular.otf") format("otf");
+}
+
+:root {
+  /* fonts */
+  --haus-bd: "AdihausDIN-Bold";
+  --haus-rg: "AdihausDIN-Regular";
+  --neue-bd: "adineuePRO-Bold";
+  --and-rg: "AND-Regular";
+
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  --grey-1: #282c31;
+  --grey-2: #d3d7da;
+  --grey-3: #767677;
+  --grey-4: #eceff1;
+
+  --yellow-1: #ede734;
+
+  --red-1: #e32b2b;
+
+  /* sizes */
+  --desktop-size: 144em;
+  --tablet-size: 76.8em;
+  --mobile-size: 37.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--haus-rg);
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.primary-btn {
+  padding: 1.5rem 2.5rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--haus-bd);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+
+  transform: translate(-3px, -3px);
+  position: relative;
+
+  transition: 0.3s cubic-bezier(0.3, 0, 0, 1), 0.3s cubic-bezier(0.3, 0, 0, 1);
+}
+
+.btn-blk {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-blk::before {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--black);
+  bottom: -5px;
+  left: 3px;
+  height: 100%;
+  width: 100%;
+
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1);
+}
+
+.btn-wht {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn-wht::before {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--white);
+  bottom: -5px;
+  left: 3px;
+  height: 100%;
+  width: 100%;
+
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1);
+}
+
+.primary-btn:active {
+  transform: translate(3px, 3px);
+  color: var(--grey-3);
+}
+
+.primary-btn:hover {
+  color: var(--grey-3);
+}
+
+.primary-btn:active::before {
+  transform: translate(-4px, -4px);
 }
