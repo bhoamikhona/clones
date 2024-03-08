@@ -1,0 +1,17 @@
+.home__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--grey-4);
+  padding: 1.5rem 4rem;
+}
+
+.home__topbar-heading {
+  margin: 0 auto;
+
+  font-family: var(--haus-rg);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
