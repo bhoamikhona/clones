@@ -1,0 +1,16 @@
+.header-top {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--haus-bd);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.32rem;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

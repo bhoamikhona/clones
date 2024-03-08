@@ -1,0 +1,22 @@
+.header-middle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 4rem;
+}
+
+.header-middle__link {
+  font-family: var(--haus-rg);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0 1rem;
+}
+
+@media (max-width: 76.8em) {
+  .header-middle {
+    display: none;
+  }
+}
