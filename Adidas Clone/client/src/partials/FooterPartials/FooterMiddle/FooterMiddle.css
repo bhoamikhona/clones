@@ -1,0 +1,44 @@
+.footer-middle {
+  padding-top: 2rem;
+  background-color: var(--white);
+  color: var(--black);
+
+  font-family: var(--haus-rg);
+  font-size: 1.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footer-middle__list {
+  list-style: none;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.footer-middle__list-heading {
+  font-size: 1.8rem;
+  font-family: var(--neue-bd);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.footer-middle__list-item {
+  white-space: nowrap;
+}
+
+li:has(.footer-middle__list-item) {
+  height: 2.4rem;
+}
+
+@media (max-width: 76.8em) {
+  .footer-middle {
+    display: none;
+  }
+}

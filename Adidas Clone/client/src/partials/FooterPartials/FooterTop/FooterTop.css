@@ -1,0 +1,26 @@
+.footer-top {
+  background-color: var(--yellow-1);
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer-top__message {
+  font-family: var(--neue-bd);
+  font-size: 3rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 76.8em) {
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

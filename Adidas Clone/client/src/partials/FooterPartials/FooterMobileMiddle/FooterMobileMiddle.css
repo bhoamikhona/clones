@@ -1,0 +1,26 @@
+.footer-mobile-middle {
+  display: none;
+}
+
+@media (max-width: 76.8em) {
+  .footer-mobile-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+    padding: 1.5rem;
+  }
+
+  .footer-mobile-middle__link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--haus-bd);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    flex: 1;
+    text-align: center;
+  }
+}

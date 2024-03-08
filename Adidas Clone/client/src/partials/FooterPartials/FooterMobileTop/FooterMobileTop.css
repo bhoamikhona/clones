@@ -1,0 +1,20 @@
+.footer-mobile-top {
+  display: none;
+}
+
+@media (max-width: 76.8em) {
+  .footer-mobile-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+    font-family: var(--haus-rg);
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}
