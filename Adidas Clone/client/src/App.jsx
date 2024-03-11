@@ -11,6 +11,8 @@ import Register from "./pages/Authentication/Register.jsx";
 import Login from "./pages/Authentication/Login.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
 import Account from "./pages/Account/Account.jsx";
+import Products from "./pages/Products/Products.jsx";
+import SingleProduct from "./pages/SingleProduct/SingleProduct.jsx";
 
 function App() {
   const Layout = function () {
@@ -59,6 +61,14 @@ function App() {
         {
           path: "/account",
           element: <Account />,
+        },
+        {
+          path: "/products",
+          element: <Products />,
+        },
+        {
+          path: "/product",
+          element: <SingleProduct />,
         },
       ],
     },
