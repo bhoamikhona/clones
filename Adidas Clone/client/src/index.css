@@ -129,3 +129,26 @@ body {
 .primary-btn:active::before {
   transform: translate(-4px, -4px);
 }
+
+.secondary-btn {
+  font-family: var(--haus-bd);
+  font-weight: 700;
+  line-height: 2.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  padding: 1.5rem 2.5rem;
+}
+
+.secondary-btn:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.secondary-btn.selected {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--white);
+}

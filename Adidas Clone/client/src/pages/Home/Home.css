@@ -91,6 +91,28 @@
   }
 }
 
+/* Slider One Section */
+.section-slider-one__btns-container {
+  margin: 2rem 15rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+@media (max-width: 76.8em) {
+  .section-slider-one__btns-container {
+    margin: 2rem 6rem 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-slider-one__btns-container {
+    margin: 2rem 3rem 0;
+  }
+}
+
 /* Section Stories */
 .section-stories {
   background-color: var(--yellow-2);

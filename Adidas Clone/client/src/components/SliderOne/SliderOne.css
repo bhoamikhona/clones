@@ -1,0 +1,16 @@
+.slider-one {
+  margin: 4rem 10.8rem;
+  margin: 4rem 15rem;
+}
+
+@media (max-width: 76.8em) {
+  .slider-one {
+    margin: 4rem 6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .slider-one {
+    margin: 4rem 3rem;
+  }
+}

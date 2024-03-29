@@ -13,6 +13,7 @@ import banner1Mobile from "../../assets/images/banner-1-mobile.jpg";
 import banner2Desktop from "../../assets/images/banner-2-desktop.jpg";
 import banner2Tablet from "../../assets/images/banner-2-tablet.jpg";
 import banner2Mobile from "../../assets/images/banner-2-mobile.jpg";
+import SliderOne from "../../components/SliderOne/SliderOne.jsx";
 
 export default function Home() {
   return (
@@ -75,6 +76,14 @@ export default function Home() {
           </li>
         </ul>
       </section>
+
+      <div className="section-slider-one">
+        <div className="section-slider-one__btns-container">
+          <button className="secondary-btn selected">New arrivals</button>
+          <button className="secondary-btn">Best of adidas</button>
+        </div>
+        <SliderOne />
+      </div>
 
       <section className="section-stories">
         <div className="section-stories__left">
